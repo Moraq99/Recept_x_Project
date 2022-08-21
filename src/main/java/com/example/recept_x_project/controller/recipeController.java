@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class recipeController {
 
 
-@GetMapping("/mainPage")
+@GetMapping(value = {"/mainPage", "/home"})
 public String getRecipe(Model model){
 
     Recipe recipe = new Recipe();
