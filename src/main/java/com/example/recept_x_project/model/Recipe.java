@@ -113,5 +113,20 @@ public class Recipe {
     public void setInstruction(String instruction) {
         this.instruction = instruction;
     }
+
+    @Override
+    public String toString() {
+        return "Recipe{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", difficulty=" + difficulty +
+                ", preparationTime=" + preparationTime +
+                ", vegan=" + vegan +
+                ", lactose_free=" + lactose_free +
+                ", gluten_free=" + gluten_free +
+                ", ingredients='" + ingredients + '\'' +
+                ", instruction='" + instruction + '\'' +
+                '}';
+    }
 }
 
