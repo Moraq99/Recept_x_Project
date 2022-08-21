@@ -18,10 +18,17 @@ public String getRecipe(Model model){
     Recipe recipe = new Recipe();
     model.addAttribute("recipe",recipe);
 
+
     recipeRepo.save(recipe);
 
     return "mainPage";
 }
+
+    @GetMapping(value = {"/test"})
+    public String Recipes(){
+        recipeService.Recipes();
+        return "redirect:/home";                //átirányitás a főoldalra
+    }
 
 @Autowired
 recipeRepo recipeRepo;
